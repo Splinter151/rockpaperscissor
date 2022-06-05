@@ -1,0 +1,18 @@
+import random
+while True:
+
+    v = random.choice(['r','s','p'])
+    user = input()
+    
+
+    if (user == 'r' and v == 'r') or (user == 's' and v) == 's' or ( user == 'p' and v == 'p'):
+        print('tie')
+        continue
+
+    elif (user == 'p' and v == 'r') or (user == 'r' and v == 's') or (user == 's' and v == 'p'):
+        print('User Wins')
+        break
+
+    elif (user == 'r' and v == 'p') or (user == 's' and v == 'r') or (user == 'p' and v == 's'):
+        print('Computer Wins')
+        break
